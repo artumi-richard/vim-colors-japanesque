@@ -38,6 +38,8 @@ function! s:hi(group, highlight_args) abort
 endfunction
 
 " UI
+"
+hi ColorColumn                  guibg=#382b3d ctermbg=236
 call s:hi('NonText',    { 'guifg': s:dark_gray })
 call s:hi('Todo',       { 'guifg': s:red, 'guibg': 'NONE' })
 call s:hi('Search',     { 'gui': 'reverse', 'guifg': s:yellow, 'guibg': 'NONE' })
