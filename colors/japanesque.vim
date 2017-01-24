@@ -70,6 +70,9 @@ if v:version >= 700
   call s:hi('CursorLineNr', { 'guifg': s:yellow })
   call s:hi('Pmenu',        { 'guifg': 'fg', 'guibg': s:red })
   call s:hi('PmenuSel',     { 'guifg': 'fg', 'guibg': s:dark_gray })
+  call s:hi('vimParenSep',     { 'guifg': s:green, 'guibg': 'NONE' })
+  call s:hi('htmlTag',     { 'guifg': s:green, 'guibg': 'NONE' })
+  call s:hi('htmlEndTag',     { 'guifg': s:green, 'guibg': 'NONE' })
 endif
 
 " Syntax
