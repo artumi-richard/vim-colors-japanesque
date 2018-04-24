@@ -23,11 +23,11 @@ let s:magenta    = '#F596AA'
 " 苗
 let s:green      = '#86C166'
 " 鶯
-let s:dark_green = '#6C6A2D'
+let s:dark_green = '#2b882b'
 " 藤
 let s:purple     = '#8B81C3'
 " 鬱金
-let s:yellow     = '#EFBB24'
+let s:yellow     = '#efd924'
 
 
 function! s:hi(group, highlight_args) abort
@@ -44,7 +44,7 @@ endfunction
 hi ColorColumn                  guibg=#382b3d ctermbg=236
 call s:hi('NonText',    { 'guifg': s:dark_gray })
 call s:hi('Todo',       { 'guifg': s:red, 'guibg': 'NONE' })
-call s:hi('Search',     { 'gui': 'reverse', 'guifg': s:yellow, 'guibg': 'NONE' })
+call s:hi('Search',     { 'guifg': 'black', 'guibg': s:yellow })
 call s:hi('SignColumn', { 'guifg': s:white, 'guibg': s:black})
 call s:hi('FoldColumn', { 'guifg': s:white, 'guibg': s:black})
 call s:hi('VertSplit',  { 'guifg': s:dark_gray, 'guibg': s:dark_gray})
@@ -55,7 +55,7 @@ call s:hi('SpecialKey', { 'guifg': s:dark_green})
 call s:hi('Visual',     { 'gui': 'reverse', 'guifg': 'fg', 'guibg': 'bg'})
 call s:hi('Folded',     { 'gui': 'underline', 'guifg': s:dark_green, 'guibg': 'bg'})
 call s:hi('MoreMsg',    { 'guifg': s:dark_green})
-call s:hi('Conceal',    { 'guifg': s:dark_gray})
+call s:hi('Conceal',    { 'guifg': s:dark_gray,'guibg': 'NONE'})
 call s:hi('Question',   { 'guifg': s:green})
 call s:hi('DiffAdd',    { 'guifg': 'fg', 'guibg': s:green})
 call s:hi('DiffDelete', { 'guifg': 'fg', 'guibg': s:red})
